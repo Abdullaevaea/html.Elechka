@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <style>
+        container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button {
+            background-color:#8A2BE2;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+         button:hover {
+            background-color:#00FFFF;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Movie Search</h1>
+    <tr>
+        <td>Название фильма:</td>
+        <input type="text">
+    </tr>
+    <tr>
+        <td>Кинотеатры:</td>
+        <select>
+        <option>Кинотеатр Paramount City</option>
+        <option>Кинотеатр Арман ТЦ Март</option>
+        <option>Кинотеатр Чаплин ТЦ Мега</option>
+        </select>
+    </tr>
+   <tr>
+       <td>Время сеанса:</td>
+       <input type="time">
+   </tr>
+    <button type="submit">Поиск фильма</button>
+    </form>
+</div>
+</body>
+</html>
