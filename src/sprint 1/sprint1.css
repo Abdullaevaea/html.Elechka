@@ -1,0 +1,73 @@
+body {
+width: 97%;
+margin-left: 20px;
+margin-right: 20px;
+}
+
+.navbar {
+width: 97%;
+background-color: #800000;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 1px;
+padding-bottom: 1px;
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+
+.navbar h1 {
+color: white;
+}
+
+.navbar-links {
+align-content: center;
+}
+
+.navbar-links a {
+color: white;
+text-decoration: none;
+margin-left: 5px;
+}
+
+.news {
+    padding-top: 10px;
+    padding-bottom:20px;
+	padding-left: 20px;
+	padding-right:20px;
+	background-color:#006400;
+	width: 97%;
+    color: white;
+}
+.news h2 {
+	margin-top: 10px;
+	color: white;
+	align-content: right;
+}
+.news img {
+padding-top: 10px;
+	width: 30%;
+	height: 150px;
+	float: left;
+	padding-right: 20px;
+}
+.news a {
+	color: white;
+	text-decoration: none;
+	font-weight: bolder;
+}
+.center {
+width: 97%;
+text-align: center;
+}
+.table{
+    	color: black;
+    	padding:5px 5px 5px 5px;
+    	margin-bottom: 5px;
+        background: white;
+           }
+           td{
+           width: 400px;
+           height: 50px;
+           padding: 5px;
+           }
