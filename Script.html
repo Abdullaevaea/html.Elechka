@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Script</title>
+</head>
+<body>
+<script type="text/javascript">
+var n = parseInt(prompt("n:"));
+
+var arr = [];
+
+for (var i = 0; i < n; i++) {
+    var element = parseFloat(prompt("n: " + (i + 1) + ":"));
+    arr.push(element);
+}
+var maxElement = Math.max(...arr);
+alert("max: " + maxElement);
+</script>
+</body>
+</html>
