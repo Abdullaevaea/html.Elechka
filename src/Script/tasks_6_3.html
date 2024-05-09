@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Task 6.3</title>
+</head>
+<body>
+<script type="text/javascript">
+	var n = parseInt(prompt("Введите количество элементов:"));
+
+var arr = [];
+
+for (var i = 0; i < n; i++) {
+    var element = parseFloat(prompt("Введите элемент " + (i + 1) + ":"));
+    arr.push(element);
+}
+
+var sum = arr.reduce(function(acc, val) {
+    return acc + val;
+}, 0);
+
+var average = sum / n;
+
+alert("Сумма элементов: " + sum + "\nСреднее значение: " + average);
+</script>
+</body>
+</html>

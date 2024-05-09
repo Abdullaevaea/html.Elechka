@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Task 6.5</title>
+</head>
+<body>
+<script type="text/javascript">
+var users = [
+    {"login": "ilyas", "password": "qwerty"},
+    {"login": "eldar", "password": "qqqqq"},
+    {"login": "assylkhan", "password": "qweqwe"},
+    {"login": "anel", "password": "asdasd"},
+    {"login": "alibek", "password": "aaaaaa"}
+];
+
+var enteredLogin = prompt("Введите логин:");
+var enteredPassword = prompt("Введите пароль:");
+
+var isAuthenticated = false;
+for (var i = 0; i < users.length; i++) {
+    if (users[i].login === enteredLogin && users[i].password === enteredPassword) {
+        isAuthenticated = true;
+        break;
+    }
+}
+
+if (isAuthenticated) {
+    alert("Welcome, you are authenticated");
+} else {
+    alert("User not found");
+}
+
+</script>
+</body>
+</html>
