@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+         input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px; 
+         }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .button {
+        background-color: green;
+        border: none;
+        color: white;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Регистрация</h1>
+            <input id ="emailField" type="text" name="email" placeholder="Email" required>
+            <input id ="passwordField" type="password" name="password" placeholder="Пароль" required>
+            <input id ="fullnameField" type="text" name="full_name" placeholder="Полное имя" required>
+            <select id ="countryField">
+                <option value="KAZAKHSTAN">KAZAKHSTAN</option>
+                <option value="USA">USA</option>
+                <option value="SINGAPOURE">SINGAPOURE</option>
+                <option value="CHINA">CHINA</option>
+            </select>
+               <a href="file:///C:/Users/Elmira/OneDrive/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/Sprint%203/SprintTask4_1.html" class="button">SIGN IN</a>
+  </div>
+    <script type="text/javascript">
+        let user = JSON.parse(localStorage.getItem("user"))
+        emailField.value = user.email
+        passwordField.value = user.password
+        fullnameField.value = user.fullname
+        countryField.value = user.country
+        saveBtn.addEventListener("click", show)
+        function show() {
+            let user = {
+                email: emailField.value,
+                password: passwordField.value,
+                fullname: fullnameField.value,
+                country: countryField.value,
+            };
+            localStorage.setItem("user", JSON.stringify(user));
+        };
+    </script>
+</body>
+</html>
+
+
